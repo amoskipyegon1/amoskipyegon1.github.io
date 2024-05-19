@@ -1,6 +1,36 @@
-html,
+:root {
+  --c-bg: #fff;
+  --c-text: #383838;
+  --c-link: #0f5a5e;
+}
+
+html {
+  background-color: var(--c-bg);
+  overflow-x: hidden;
+  color: var(--c-text);
+  font-size: 16px;
+}
+
 body {
-  font-size: medium;
+  padding: 0px 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+main,
+footer {
+  width: 100%;
+  max-width: 650px;
+  padding-top: 20px;
+}
+main {
+  min-height: 90vh;
+}
+
+a {
+  color: var(--c-link) !important;
+  font-weight: 600;
 }
 
 @tailwind base;
